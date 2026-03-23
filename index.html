@@ -5,19 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>anomaly-vr</title>
     <style>
-        body { margin: 0; overflow: hidden; font-family: sans-serif; }
-        #status-text {
-            position: absolute;
-            top: 20px;
-            width: 100%;
-            text-align: center;
-            color: white;
-            background: rgba(0,0,0,0.5);
-            z-index: 10;
-            padding: 10px 0;
-        }
+      body {
+        margin: 0;
+        overflow: hidden;
+        font-family: sans-serif;
+      }
+      #status-text {
+        position: fixed; /* Обязательно fixed для AR */
+        top: 20px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        color: #00ff00; /* Сделаем ярко-зеленым для теста */
+        background: rgba(0, 0, 0, 0.7);
+        z-index: 99999; /* Выше всего остального */
+        padding: 15px 0;
+        font-weight: bold;
+        pointer-events: none; /* Чтобы клики проходили сквозь текст к AR */
+      }
     </style>
-    <script type="module" crossorigin src="/anomaly-vr-game/assets/index-C2-UmkZT.js"></script>
+    <script type="module" crossorigin src="/anomaly-vr-game/assets/index-B8OthTvY.js"></script>
   </head>
   <body>
     <div id="status-text">Наведите камеру на пол для сканирования</div>
