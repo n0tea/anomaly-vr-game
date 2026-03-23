@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>anomaly-vr</title>
+    <style>
+        body { margin: 0; overflow: hidden; font-family: sans-serif; }
+        #status-text {
+            position: absolute;
+            top: 20px;
+            width: 100%;
+            text-align: center;
+            color: white;
+            background: rgba(0,0,0,0.5);
+            z-index: 10;
+            padding: 10px 0;
+        }
+    </style>
+    <script type="module" crossorigin src="/anomaly-vr-game/assets/index-C-Pln7BN.js"></script>
+  </head>
+  <body>
+    <div id="status-text">Наведите камеру на пол для сканирования</div>
+    <div id="app"></div>
+  </body>
+</html>
